@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大美桂林</title>
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="../resource/lib/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <!-- scrollreveal js库 -->
+  <script src="../resource/lib/scrollreveal.min.js"></script>
+  <!-- CSS 样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/scenery.css">
+  <link rel="stylesheet" href="./css/scenery-phone.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- logo -->
+      <a href="#" class="nav_logo" id="nav_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </a>
+      <!-- nav list -->
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">首页</a>
+          </li>
+          <li class="nav_item">
+            <a href="./scenery.html" class="nav_link">桂林风景</a>
+          </li>
+          <li class="nav_item">
+            <a href="./food.html" class="nav_link">桂林美食</a>
+          </li>
+          <li class="nav_item">
+            <a href="./culture.html" class="nav_link">桂林文化</a>
+          </li>
+          <li class="nav_item">
+            <a href="./history.html" class="nav_link">桂林历史</a>
+          </li>
+          <li class="nav_item">
+            <a href="./login.html" target="_blank" class="nav_link">登录</a>
+          </li>
+          <li class="nav_item">
+            <img src="../resource/images/avatar.jpg" class="avatar" alt="">
+          </li>
+        </ul>
+        
+        <div class="nav_close" id="nav-close">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+      <!-- menu btn 屏幕像素小于768时 将nav list 展开和隐藏 -->
+      <div class="nav_btn">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- jumbotron 全屏展示 -->
+  <div class="jumbotron-bg" id="jumbotron">
+    <div class="container jumbotron-data">
+      <h1 class="jumbotron-h1"><span class="highlight">生活</span>本来拥挤</h1>
+      <h1 class="jumbotron-h1">&nbsp;&nbsp;亲近自然 <i class="bi bi-quote"></i>放松<span class="highlight">心情</span></h1>
+      
+      <div class="circle"></div>
+    </div>
+    <p class="jumbotron-p">畅玩桂林，遇见好心情！！！</p>
+  </div>
+
+  <!-- content -->
+  <main class="content container" id="content">
+    <!-- 桂林风景简介 -->
+    <section class="guilin-intro">
+      <h2 class="intro-title">桂林山水</h2>
+      <p class="intro-content">
+        桂林山水是对桂林旅游资源的总称。国家AAAAA级旅游景区，中国十大风景名胜之一，
+        桂林山水是中国山水的代表闻名，千百年来享有“桂林山水甲天下”的美誉。
+      </p>
+      <p class="intro-content">
+        桂林市是世界著名的风景游览城市和中国历史文化名城，是“万年智慧圣地”，是中国陶器起源地之一，是世界上唯一具有三处万年古陶遗址（甑皮岩、大岩、庙岩）的城市，桂林市甑皮岩发现的"陶雏器"填补世界陶器起源空白点。 
+      </p>
+      <p class="intro-content">
+        “万年智慧”是桂林重量级文化名片，甑皮岩国家考古遗址公园是桂林向世界展现中华民族“万年智慧”的历史文化名片。
+        桂林拥有世界自然遗产桂林山水、世界灌溉遗产灵渠两大世界遗产。
+      </p>
+    </section>
+
+    <!-- scenery 旅游路线 -->
+    <section class="scenery">
+      <div class="scenery-bg">
+        <h2 class="scenery-title">桂林旅游路线 <i class="bi bi-camera-reels-fill"></i></h2>
+
+        <!-- 日月双塔 卡片 -->
+        <div class="scenery-card">
+          <img class="scenery-img" src="../resource/images/riyueshuangta.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">日月双塔<i class="bi bi-quote"></i></h2>
+            <p class="card-p">
+              两座宝塔坐落于杉湖中，日塔为铜塔，月塔为琉璃塔<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="triangle"></div>
+            <img src="../resource/images/arrow-right.png" class="card-arrow" alt="">
+            <img src="../resource/images/yanzi.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 东西巷 -->
+        <div class="scenery-card card-flex-right">
+          <img class="scenery-img img-rotate-right img-bg-pink" src="../resource/images/dongxixiang.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">东西巷</h2>
+            <p class="card-p">
+              桂林市一个集旅游、民俗、文化、购物、餐饮、休闲、娱乐为一体的综合型商业街区。<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="card-circle"></div>
+            <img src="../resource/images/arrow-left.png" class="card-arrow-left" alt="">
+            <img src="../resource/images/bee.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 两江四湖 -->
+        <div class="scenery-card">
+          <img class="scenery-img img-bg-blue" src="../resource/images/liangjiangsihu.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">两江四湖<i class="bi bi-quote"></i></h2>
+            <p class="card-p">
+              桂林“两江四湖”，即指漓江、桃花江、木龙湖（含铁佛塘）、桂湖、榕湖、杉湖<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="triangle"></div>
+            <img src="../resource/images/arrow-right.png" class="card-arrow" alt="">
+            <img src="../resource/images/flower.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 漓江 -->
+        <div class="scenery-card card-flex-right">
+          <img class="scenery-img img-rotate-right" src="../resource/images/lijiang.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">漓江</h2>
+            <p class="card-p">
+              世界上规模最大、风景最美的岩溶山水游览区<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="card-circle"></div>
+            <img src="../resource/images/arrow-left.png" class="card-arrow-left" alt="">
+            <img src="../resource/images/star.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 遇龙河竹筏 -->
+        <div class="scenery-card">
+          <img class="scenery-img img-bg-pink" src="../resource/images/yulonghe.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">遇龙河竹筏<i class="bi bi-quote"></i></h2>
+            <p class="card-p">
+              遇龙河是广西桂林漓江最美的一条支流,也是阳朔最好的婚纱照外景基地<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="triangle"></div>
+            <img src="../resource/images/arrow-right.png" class="card-arrow" alt="">
+            <img src="../resource/images/camera.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 阳朔西街 -->
+        <div class="scenery-card card-flex-right">
+          <img class="scenery-img img-rotate-right img-bg-blue" src="../resource/images/yangsuoxijie.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">阳朔西街</h2>
+            <p class="card-p">
+              来阳朔游玩的人,白天领略山水,晚上必定要来西街逛<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="card-circle"></div>
+            <img src="../resource/images/arrow-left.png" class="card-arrow-left" alt="">
+            <img src="../resource/images/drink.png" class="card-icon" alt="">
+          </div>
+        </div>
+
+        <!-- 龙胜梯田 -->
+        <div class="scenery-card">
+          <img class="scenery-img" src="../resource/images/longshengtitian.jpg" alt="">
+          <div class="card-data">
+            <h2 class="card-title">龙胜梯田<i class="bi bi-quote"></i></h2>
+            <p class="card-p">
+              夏日骄阳似火，绿油油的禾苗随着微风翻卷着道道绿波；金秋流光溢彩<br>
+            </p>
+            <!-- 装饰 -->
+            <div class="triangle"></div>
+            <img src="../resource/images/arrow-right.png" class="card-arrow" alt="">
+            <img src="../resource/images/glasses.png" class="card-icon" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_box container">
+      <div class="footer_content">
+        <a href="#" class="footer_logo">
+          <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+        </a>
+  
+        <h3 class="footer_title">桂林山水甲天下</h3>
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-emoji-smile icon_scale"></i> 欢迎大家来桂林游玩
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">我们的地址</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">联系我们</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-envelope icon_scale"></i> XXXX@qq.com
+          </li>
+          <li>
+            <i class="bi bi-telephone-forward icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">关于网站</h3>
+  
+        <ul class="footer_data">
+          <li>2021-2022-1学期</li>
+          <li>Web前端开发技术课程设计</li>
+          <li>学号：XX</li>
+          <li>姓名：XX</li>
+          <li>班级：XX</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- up Top 按钮 -->
+  <a href="#jumbotron" class="up_top" id="up_top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- JQuery 和 Bootstrap -->
+  <script src="../resource/lib/jquery-3.6.0.min.js"></script>
+  <script src="../resource/lib/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <!-- script -->
+  <script src="./js/common.js"></script>
+  <script src="./js/scenery.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* == 宽度像素小于768px == */
+@media screen and (max-width: 768px) {
+  .nav_link {
+    color: var(--dark-green);
+  }
+
+  /* == content == */
+  .scenery_img {
+    width: 100%;
+  }
+
+  .food-intro {
+    flex-direction: column;
+  }
+  
+}
+
+/* == 宽度像素大于768px == */
+@media screen and (min-width: 768px) {
+  /* == content == */
+  .left_img {
+    display: flex;
+    align-items: center;
+  }
+  .right_img {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}

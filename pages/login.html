@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <!-- Login -->
+  <div class="login">
+    <form class="login_form">
+      <div class="login_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </div>
+
+      <!-- moon font icon 当logo：hover时将其放下来 -->
+      <div class="moon">
+        <i class="bi bi-moon-stars-fill"></i>
+      </div>
+
+      <!-- username -->
+      <div class="login_box">
+        <input type="text" class="login_input" name="username" id="username" placeholder=" ">
+        <label for="username" class="login_label">账 号</label>
+      </div>
+
+      <!-- password -->
+      <div class="login_box">
+        <input type="password" class="login_input" name="password" id="password" placeholder=" ">
+        <label for="password" class="login_label">密 码</label>
+      </div>
+
+      <button type="button" class="login_btn" id="loginBtn">登 录</button>
+
+      <!-- sun font icon -->
+      <div class="sun">
+        <i class="bi bi-brightness-high-fill"></i>
+      </div>
+
+      <a class="toRegister" target="_blank" href="./register.html">注册，加入我们</a>
+    </form>
+  </div>
+
+  <!-- JS -->
+  <script src="./js/login.js"></script>
+</body>
+</html>

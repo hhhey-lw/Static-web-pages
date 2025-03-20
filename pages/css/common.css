@@ -1,0 +1,275 @@
+/* === bootstrap font icon 字体图标 === */
+@import url("../../resource/lib/icons-1.7.2/font/bootstrap-icons.css");
+
+/* === 定义基本的样式 === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'YouYuan', 'Microsoft YaHei';
+  background-color: #FFF;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === header 样式 === */
+.header {
+  width: 100%;
+  overflow: hidden;
+  background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: .5s;
+}
+
+/* == scroll header添加阴影 和 改变颜色 == */
+.scroll-header {
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+}
+/* == header logo and font 改变颜色 == */
+.scroll-white {
+  color: #FFF !important;
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo,
+.nav_close,
+.nav_toggle {
+  color: #FFF;
+}
+
+.nav_logo {
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  transition: .3s;
+}
+
+.nav_logo-icon {
+  font-size: 1.15rem;
+}
+
+.nav_logo:hover {
+  color: brown;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.nav_toggle {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.nav_link {
+  display: inline-block;
+  color: #FFF;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav_link:hover {
+  color: #000;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.nav_btn:hover {
+  border: 1px solid #FFF;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* 显示header nav list菜单 */
+.show_menu {
+  right: 0 !important;
+}
+
+
+
+/* === footer === */
+.footer {
+  background-color: #FFF;
+}
+
+.footer_logo {
+  font-size: 1.75rem;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.footer_title {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+
+.footer_content {
+  padding: 20px;
+}
+
+.footer_data {
+  color: #000;
+}
+
+.footer_data > li {
+  cursor: pointer;
+  transition: .3s;
+  margin: 5px 0;
+}
+
+.footer_data > li:hover {
+  color: #FFF;
+  font-weight: bold;
+}
+.footer_data >li:hover .icon_scale {
+  display: inline-block;
+  transform: scale(1.2);
+}
+
+/* === Top 点击滑动到顶部 === */
+.up_top {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #000;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+}
+
+.show_up-top {
+  display: block;
+}
+
+.up_top:visited {
+  color: #FFF;
+}
+
+
+
+
+/* == 宽度像素小于768px == */
+@media screen and (max-width: 768px) {
+  /* == header == */
+  .nav_menu {
+    position: fixed;
+    background-color: #FFF;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 4rem 0 0 3rem;
+    border-radius: 1rem 0 0 1rem;
+    z-index: 66;
+    transition: .5s;
+  } 
+  
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .nav_link {
+    color: #000;
+  }
+
+  .nav_close {
+    color: #000;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+  }
+
+  
+  /* == footer == */
+  .footer_box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* == 宽度像素大于768px == */
+@media screen and (min-width: 768px) {
+  /* == header == */
+  .nav_menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav_btn {
+    display: none;
+  } 
+
+  .nav_close {
+    display: none;
+  }
+
+
+  /* == footer == */
+  .footer_box {
+    display: flex;
+    justify-content: space-between;
+  }
+}

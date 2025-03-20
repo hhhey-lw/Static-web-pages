@@ -1,0 +1,23 @@
+/* == 宽度像素小于768px == */
+@media screen and (max-width: 768px) {
+  /* === header === */
+  .nav_link {
+    color: brown;
+  }
+
+  /* === 巨幕 === */
+  .jumbotron-bg {
+    background-position: 20% center;
+  }
+
+}
+
+/* == 宽度像素大于768px == */
+@media screen and (min-width: 768px) {
+
+  /* == content == */
+  .img_animation {
+    max-height: 178px;
+  }
+
+}

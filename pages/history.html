@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大美桂林</title>
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="../resource/lib/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <!-- scrollreveal js库 -->
+  <script src="../resource/lib/scrollreveal.min.js"></script>
+  <!-- CSS 样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/history.css">
+  <!-- <link rel="stylesheet" href="./css/scenery-phone.css"> -->
+</head>
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- logo -->
+      <a href="#" class="nav_logo" id="nav_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </a>
+      <!-- nav list -->
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">首页</a>
+          </li>
+          <li class="nav_item">
+            <a href="./scenery.html" class="nav_link">桂林风景</a>
+          </li>
+          <li class="nav_item">
+            <a href="./food.html" class="nav_link">桂林美食</a>
+          </li>
+          <li class="nav_item">
+            <a href="./culture.html" class="nav_link">桂林文化</a>
+          </li>
+          <li class="nav_item">
+            <a href="./history.html" class="nav_link">桂林历史</a>
+          </li>
+          <li class="nav_item">
+            <a href="./login.html" target="_blank" class="nav_link">登录</a>
+          </li>
+          <li class="nav_item">
+            <img src="../resource/images/avatar.jpg" class="avatar" alt="">
+          </li>
+        </ul>
+        
+        <div class="nav_close" id="nav-close">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+      <!-- menu btn 屏幕像素小于768时 将nav list 展开和隐藏 -->
+      <div class="nav_btn">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- jumbotron 全屏展示 -->
+  <div class="jumbotron-bg" id="jumbotron">
+    <div class="container jumbotron-data">
+      <h1 class="jumbotron-h1"><span class="highlight">桂林</span>历史文化名城</h1>
+      <h1 class="jumbotron-h1">&nbsp;&nbsp;探索 <i class="bi bi-quote"></i>桂林<span class="highlight">悠久历史</span></h1>
+      
+      <div class="circle"></div>
+    </div>
+    <p class="jumbotron-p">畅玩桂林，遇见好心情！！！</p>
+  </div>
+
+  <!-- content -->
+  <main class="content container" id="content">
+    <!-- 桂林简介 -->
+    <section class="guilin-intro">
+      <h2 class="intro-title">桂林简介</h2>
+      <p class="intro-content">
+        桂林，简称桂，广西壮族自治区辖地级市，是世界著名风景游览城市、万年智慧圣地、
+        全国重要高新技术产业基地，中国老工业基地，是国务院批复确定的中国对外开放国际
+        旅游城市、全国旅游创新发展先行区和国际旅游综合交通枢纽，截至2019年，全市下辖6
+        区10县、代管1个县级市、总面积2.78万平方公里，建成区面积162平方千米。
+        根据第七次人口普查数据，截至2020年11月1日零时，桂林市常住人口为493.1137万人。
+        2020年，桂林市实现地区生产总值2130.41亿元。
+      </p>
+      <p class="intro-content">
+        桂林地处中国华南，湘桂走廊南端，是中央军委桂林联勤保障中心驻地、国家可持续发展议程创
+        新示范区、 中国旅游业态风向标，联合国世界旅游组织/亚太旅游协会旅游趋势与展望国际论坛永
+        久举办地，是泛珠江三角洲经济区与东盟自由贸易区战略交汇的重要节点城市，是以新型工业为主
+        的国际旅游胜地。
+      </p>
+    </section>
+
+    <!-- 时间线 -->
+    
+    <!-- title -->
+    <h3 class="timeline-title">桂林历史轨迹</h3>
+    <section class="timeLine">
+      <!-- 左部分 -->
+      <div class="left">
+        <!-- card-left 此div定位circle -->
+
+        <!-- 甑皮岩遗址 -->
+        <div class="card-left">
+          <!-- card-box 此div用于定位::after突出三角形 -->
+          <div class="card-box">
+            <div class="card-img">
+              <img src="../resource/images/guilinzpy.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>甑皮岩遗址</h3>
+              <p>
+                甑皮岩遗址，位于桂林市南郊，年代约距今1.2万年至7千年，是华南地区新石器时代
+                早期代表性遗址，是国家考古遗址公园，是桂林市向世界展现中华民族“万年智慧”的
+                历史文化名片。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>Neolithic</p>
+          </div>
+        </div>
+  
+        <!-- 古南门 -->
+        <div class="card-left">
+          <div class="card-box bgc-green">
+            <div class="card-img">
+              <img src="../resource/images/guilingnm.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>古南门</h3>
+              <p>
+                在桂林市美丽的榕湖北岸，有一座古南门，砖石砌筑。据载为唐代名将李靖于武德四年（621）平定岭南后，
+                在桂林筑置城守所建，是桂林“唐城”的南大门，距今已1300多年。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>621</p>
+          </div>
+        </div>
+  
+        <!-- 榕湖 -->
+        <div class="card-left">
+          <div class="card-box">
+            <div class="card-img">
+              <img src="../resource/images/guilinrh.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>榕湖</h3>
+              <p>
+                榕湖与杉湖相连，面积不大，原为桂林城南护城河，明朝洪武八年(1375年)城池扩展，
+                护城河废弃，逐渐变为城内风光绮丽的湖泊。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>1375</p>
+          </div>
+        </div>
+
+        <!-- 兴安红军长征突破湘江烈士纪念碑园 -->
+        <div class="card-left">
+          <div class="card-box bgc-blue">
+            <div class="card-img">
+              <img src="../resource/images/guilinxahj.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>兴安红军长征突破湘江烈士纪念碑园</h3>
+              <p>
+                兴安红军长征突破湘江烈士纪念碑园坐落于兴安县城西南1公里的狮子山，
+                占地面积8万平方米，由大型群雕、主碑、纪念馆组成。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>1934</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 右部分 -->
+      <div class="right">
+        <!-- 错开左右部分 -->
+        <div style="width: 100%; height: 150px;"></div>
+  
+        <!-- 灵渠 -->
+        <div class="card-right">
+          <div class="card-box bgc-blue">
+            <div class="card-img">
+              <img src="../resource/images/guilinlj.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>灵渠</h3>
+              <p>
+                灵渠，古称秦凿渠、零渠、陡河、兴安运河、湘桂运河，是古代中国劳动人民创造
+                的一项伟大工程。位于广西壮族自治区兴安县境内，于公元前214年凿成通航。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>214 BC</p>
+          </div>
+        </div>
+  
+        <!-- 靖江王城 -->
+        <div class="card-right">
+          <div class="card-box">
+            <div class="card-img">
+              <img src="../resource/images/guilinjjwf.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>靖江王城</h3>
+              <p>
+                靖江王城坐落于桂林市漓江西岸，是明朝藩王靖江王朱守谦的藩王府，始建于洪武五年（公元1372年）
+                洪武二十五（公元1392年）年建成，靖江王城外围有国内保存最完好的明代城墙。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>1372</p>
+          </div>
+        </div>
+
+        <!-- 八路军桂林办事处 -->
+        <div class="card-right">
+          <div class="card-box">
+            <div class="card-img">
+              <img src="../resource/images/guilinbaljbsc.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>八路军桂林办事处</h3>
+              <p>
+                八路军桂林办事处，是中国共产党与国民党合作抗日初期，八路军 (当时中国工农红军
+                改编为国民革命军第八路军)设于国民党统治区——桂林的一个公开合法机关。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>1938</p>
+          </div>
+        </div>
+
+        <!-- 飞虎队遗址公园 -->
+        <div class="card-right">
+          <div class="card-box bgc-green">
+            <div class="card-img">
+              <img src="../resource/images/guilinfhd.jpg" alt="">
+            </div>
+    
+            <div class="card-info">
+              <h3>飞虎队遗址公园</h3>
+              <p>
+                飞虎队遗址公园（全称：美国飞虎队桂林遗址公园），是为纪念第二次世界大战期间美国志愿援华航空队
+                （俗称“飞虎队”）的历史功绩，在当年机场旧址建设的纪念公园。
+              </p>
+            </div>
+          </div>
+  
+          <div class="timeline-circle">
+            <p>1942</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_box container">
+      <div class="footer_content">
+        <a href="#" class="footer_logo">
+          <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+        </a>
+  
+        <h3 class="footer_title">桂林山水甲天下</h3>
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-emoji-smile icon_scale"></i> 欢迎大家来桂林游玩
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">我们的地址</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">联系我们</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-envelope icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-telephone-forward icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">关于网站</h3>
+  
+        <ul class="footer_data">
+          <li>2021-2022-1学期</li>
+          <li>Web前端开发技术课程设计</li>
+          <li>学号：XX</li>
+          <li>姓名：XX</li>
+          <li>班级：XX</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- up Top 按钮 -->
+  <a href="#jumbotron" class="up_top" id="up_top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- JQuery 和 Bootstrap -->
+  <script src="../resource/lib/jquery-3.6.0.min.js"></script>
+  <script src="../resource/lib/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <!-- script -->
+  <script src="./js/common.js"></script>
+  <script src="./js/history.js"></script>
+</body>
+</html>

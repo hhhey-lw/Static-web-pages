@@ -1,0 +1,379 @@
+/* === 定义全局配色 === */
+:root {
+  --body-color: #FFF;
+  --dark-green: #387558;
+  --light-green: #91B2B1;
+  --light-brown: #BBA494;
+  --faint-yellow: #F9D5A8;
+  --light-yellow: #FFF1DD;
+  --light-orange: #82ccdd;
+  --gray: #AAA;
+}
+
+/* == scroll header添加阴影 和 改变颜色 == */
+.scroll-header {
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--dark-green);
+}
+/* == header logo and font 改变颜色 == */
+.scroll-white {
+  color: #FFF !important;
+}
+
+.nav_logo {
+  color: #FFF;
+}
+
+.nav_logo:hover {
+  color: orange;
+}
+
+.nav_link {
+  color: #FFF;
+}
+
+.nav_link:hover {
+  color: var(--light-orange);
+}
+
+/* === carousel 轮播图 === */
+/* 用background 可以position定位 不用缩放图片 */
+.carousel-item-1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../resource/images/lunbo-item1.png');
+  background-position: 45% center;
+}
+
+.carousel-item-2 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../resource/images/yuming.png');
+  background-position: 36% center;
+}
+
+.carousel-item-3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../resource/images/rongdong.png');
+  background-position: 60% center;
+}
+
+/* === content 主体部分 === */
+.content {
+  margin-bottom: 1rem;
+}
+
+/* 图片放大 and 旋转 */
+.img_animation {
+  transition: .5s;
+  cursor: pointer;
+}
+
+.img_animation:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* === scenery 风景介绍 === */
+.scenery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scenery_img {
+  max-width: 600px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.card-data {
+  position: relative;
+}
+
+.card-decorate {
+  position: absolute;
+  width: 50%;
+  top: -2rem;
+  right: 0;
+  z-index: -1;
+}
+
+.right_img .card-decorate {
+  top: -4rem;
+  right: 0;
+}
+
+.right_img .card-decorate-1 {
+  width: 20%;
+  right: unset;
+  left: 0;
+  top: -80%;
+}
+
+.card-decorate-2 {
+  width: 20%;
+  right: unset;
+  top: unset;
+  left: 0;
+  bottom: -50%;
+}
+
+.margin_box {
+  margin-bottom: 18px;
+}
+
+.highlight {
+  color: #387558;
+  font-weight: 700;
+}
+
+.explore_btn {
+  display: block;
+  background-color: #387558;
+  padding: 0.7rem 1.2rem;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: .3s;
+  width: 150px;
+  text-align: center;
+}
+
+.icon_btn {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 3px;
+  transition: .3s;
+}
+
+.explore_btn:hover {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--faint-yellow);
+  /* background-color: var(--light-orange); */
+}
+
+.explore_btn:hover .icon_btn {
+  transform: translateX(.25rem);
+}
+
+/* === 美食介绍 === */
+.food_bg {
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 20px;
+  color: #FFF;
+  background-color: var(--dark-green);
+  border-radius: 8px;
+}
+
+.noodle-box {
+  position: relative;
+  width: 300px;
+  height: 270px;
+}
+
+.noodle {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 300px;
+}
+
+.noodle-cloud {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 22%;
+}
+
+.food-intro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.margin_box-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.food_title {
+  text-align: center;
+  background: url('../../resource/images/red-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.food_card {
+  position: relative;
+  background-color: #FFF;
+  color: #387558;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.food_card_number {
+  background-color: #387558;
+  color: #FFF;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.food_btn {
+  background-color: #FFF;
+  color: #387558;
+  margin-top: 10px;
+}
+
+/* === 文化介绍 === */
+.culture_bg {
+  background-color: var(--faint-yellow);
+  margin-top: 30px;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.culture_title {
+  text-align: center;
+  margin: 6px 0;
+  color: #FFF;
+}
+
+.culture_card {
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* === contact 联系我们 === */
+.contact {
+  margin: 6rem auto;
+}
+
+.contact-box {
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--dark-green);
+}
+
+.box-info > h3 {
+  font-size: 1.5rem;
+}
+
+.form-box {
+  position: relative;
+  height: 3.25rem; /* 3个字体高度 root em*/
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.form-input {
+  font-size: 1rem;
+  width: 100%;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  padding: .5rem .25rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #CCC;
+  outline: none; /* input focus 没有焦点边框 */
+}
+
+textarea.form-input {
+  height: 4rem;
+  resize: none;
+}
+
+.form-label {
+  font-size: 1rem;
+  position: absolute;
+  top: 1.75rem;
+  left: .25rem;
+  width: 3rem;
+  color: #AAA;
+  transition: .3s;
+  z-index: 5;
+}
+
+/* input 获得focus label 往上移 */
+.form-input:focus + .form-label {
+  top: 0;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+/* + 后续兄弟元素选择符 */
+/* :placeholder-shown => input placeholder 有内容时会被选中 */
+/* input 取反(有placeholder内容) => 没有placeholder内容 输入框输入文本 placeholder内容被隐藏 */
+.form-input:not(:placeholder-shown) + .form-label {
+  top: 0;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+.form-btn {
+  width: 8rem;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  background-color: var(--dark-green);
+  color: #FFF;
+  border: none;
+  border-radius: .5rem;
+  margin-top: 3.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* === footer === */
+.footer {
+  background-color: var(--dark-green);
+}
+
+.footer_logo {
+  color: #FFF;
+}
+
+.footer_title {
+  color: #FFF;
+}
+
+.footer_data {
+  color: var(--gray);
+}
+
+.footer_data > li:hover {
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* === Top 点击滑动到顶部 === */
+.up_top {
+  color: #FFF;
+  background-color: var(--dark-green);
+}
+
+.up_top:visited {
+  color: #FFF;
+}

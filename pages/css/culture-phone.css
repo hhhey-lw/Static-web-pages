@@ -1,0 +1,64 @@
+/* == 宽度像素小于768px == */
+@media screen and (max-width: 768px) {
+  /* === header === */
+  .nav_link {
+    color: #FFBAA8;
+  }
+
+  /* === 巨幕 === */
+  .jumbotron-bg {
+    background-position: 35% center;
+  }
+
+  /* card 调整 */
+  .cylindrical-box {
+    top: 10%;
+  }
+
+  .card-reverse .cylindrical-box {
+    top: 10%;
+  }
+
+  .card-number {
+    right: 30%;
+    transform: translateY(-30%);
+  }
+
+  .card-reverse .card-number {
+    left: 30%;
+  }
+
+  .card, .card-reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card-right {
+    max-width: 80%;
+  }
+
+  .card-left {
+    max-width: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+/* == 宽度像素大于768px == */
+@media screen and (min-width: 768px) {
+  /* == header == */
+  .nav_link {
+    color: #FFF !important;
+  }
+
+  /* == content == */
+  
+  .margin-left-1 {
+    margin-left: 1rem;
+  }
+
+  .margin-right-1 {
+    margin-right: 1rem;
+  }
+}

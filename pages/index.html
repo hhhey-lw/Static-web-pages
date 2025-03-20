@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大美桂林</title>
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="../resource/lib/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <!-- scrollreveal js库 -->
+  <script src="../resource/lib/scrollreveal.min.js"></script>
+  <!-- CSS 样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index-phone.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- logo -->
+      <a href="#" class="nav_logo" id="nav_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </a>
+      <!-- nav list -->
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">首页</a>
+          </li>
+          <li class="nav_item">
+            <a href="./scenery.html" class="nav_link">桂林风景</a>
+          </li>
+          <li class="nav_item">
+            <a href="./food.html" class="nav_link">桂林美食</a>
+          </li>
+          <li class="nav_item">
+            <a href="./culture.html" class="nav_link">桂林文化</a>
+          </li>
+          <li class="nav_item">
+            <a href="./history.html" class="nav_link">桂林历史</a>
+          </li>
+          <li class="nav_item">
+            <a href="./login.html" target="_blank" class="nav_link">登录</a>
+          </li>
+          <li class="nav_item">
+            <img src="../resource/images/avatar.jpg" class="avatar" alt="">
+          </li>
+        </ul>
+        
+        <div class="nav_close" id="nav-close">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+      <!-- menu btn 屏幕像素小于768时 将nav list 展开和隐藏 -->
+      <div class="nav_btn">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- carousel 轮播图 -->
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-item-1"></div>
+        <!-- <img src="../resource/images/item2.png" class="d-block w-100 carousel-img" alt="..."> -->
+        <div class="carousel-caption d-md-block">
+          <div class="caption-box">
+            <h5>桂林象鼻山</h5>
+            <p>欢迎来桂林游玩</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-2"></div>
+        <!-- <img src="../resource/images/food_bg.png" class="d-block w-100 carousel-img" alt="..."> -->
+        <div class="carousel-caption d-md-block">
+          <div class="caption-box">
+            <h5>桂林漓江</h5>
+            <p>欢迎来桂林游玩</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-3"></div>
+        <!-- <img src="../resource/images/item3.png" class="d-block w-100 carousel-img" alt="..."> -->
+        <div class="carousel-caption d-md-block">
+          <div class="caption-box">
+            <h5>桂林溶洞</h5>
+            <p>欢迎来桂林游玩</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carousel" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carousel" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  <!-- content -->
+  <main class="content container" id="content">
+    <!-- scenery 风景介绍 -->
+    <section class="scenery">
+      <div class="scenery_card left_img">
+        <img src="../resource/images/liangjiangsihu.png" alt="" class="scenery_img">
+
+        <div class="card-data">
+          <h1 class="margin_box">夏季，一定要游趟两江四湖！</h1>
+          <p class="margin_box">
+            踏上两江四湖游船，在船上倾听江水流淌，
+            在夜色里仰望星光点点，在神游中感受桥洞和水间变换。
+            一起享受一段安静而缓慢的时光
+          </p>
+          
+          <!-- 装饰 -->
+          <img src="../resource/images/tingzi.png" class="card-decorate" alt="">
+          <img src="../resource/images/ta.png" class="card-decorate card-decorate-2" alt="">
+        </div>
+      </div>
+
+      <div class="scenery_card right_img">
+        <img src="../resource/images/fishman.png" alt="" class="scenery_img">
+      
+        <div class="card-data">
+          <h1 class="margin_box">
+            一帆一桨一<span class="highlight">渔舟</span><br/>一个<span class="highlight">渔翁</span>一钓钩
+          </h1>
+          <p class="margin_box">
+            漓江两岸的村民世代都以捕鱼为生，特别是在阳朔兴坪，他们除了使用传统的撒网工具捕鱼外，
+            每家还训练了多只鸬鹚（又名鱼鹰），经过他们训练出来的鱼鹰，是他们捕鱼的主要工具。
+            他们捕鱼时使用竹筏而不是用木船作为捕鱼的工具，这也是不同于我国其它地方的一种特色。
+          </p>
+          <!-- 装饰 -->
+          <img src="../resource/images/sanshui-bg.png" class="card-decorate" alt="">
+          <img src="../resource/images/bamboo.png" class="card-decorate card-decorate-1" alt="">
+        </div>
+      </div>
+
+      <a href="./scenery.html" class="explore_btn">
+        探索美景<i class="bi bi-arrow-down-right icon_btn"></i>
+      </a>
+    </section>
+
+    <!-- food 美食介绍 -->
+    <section class="food">
+      <div class="food_bg">
+        <div class="food-intro">
+          <div class="noodle-box">
+            <img src="../resource/images/noodle.png" class="noodle" alt="">
+            <img src="../resource/images/noodle-cloud.png" class="noodle-cloud" alt="">
+          </div>
+          <div class="food_title">
+            <h2>
+              发现桂林美食<br>
+              开始美味之旅<i class="bi bi-quote"></i>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="food_card">
+              <img src="../resource/images/mifen.jpg" class="img_animation" alt="">
+  
+              <div>
+                <div class="food_card_number">01</div>
+                <h3 class="margin_box-8">桂林米粉</h3>
+                <p>
+                  最传统正宗的桂林米粉，米粉以其白、嫩、爽、香的特点吸引了八方食客。
+                  米粉制作工艺源于传统，优于传统，以独创的米粉香滑、卤水香浓、佐料丰富等优势，
+                  这也是正宗桂林米粉所要具备的独特口感优势。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="food_card">
+              <img src="../resource/images/youcha.jpg" class="img_animation" alt="">
+  
+              <div>
+                <div class="food_card_number">02</div>
+                <h3 class="margin_box-8">恭城油茶</h3>
+                <p>
+                  油茶的统—制作方法是以老叶红茶为主料，用油炒至微焦而香，放入食盐加水煮沸，
+                  多数加生姜同煮，味浓而涩，涩中带辣。恭城一带还再加磨醉的花生粉，使味道多了醇厚少了涩，
+                  享誉桂北和广西各地。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="food_card">
+              <img src="../resource/images/pijiuyu.jpg" class="img_animation" alt="">
+  
+              <div>
+                <div class="food_card_number">03</div>
+                <h3 class="margin_box-8">阳溯啤酒鱼</h3>
+                <p>
+                  选用阳朔漓江里鲜活的大鲤鱼，先用桂北山区出产的生茶油烹炸，后放入桂林产的上等啤酒红焖而成，
+                  具有独特的香酥鲜嫩风味。特别是鱼鳞被炸成一层脆壳，又沾满了酱汁，
+                  真正是一次全新的舌尖体验。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="./food.html" class="explore_btn food_btn">
+          发现美食<i class="bi bi-arrow-down-right icon_btn"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- culture 文化介绍 -->
+    <section class="culture">
+      <div class="culture_bg">
+        <h2 class="culture_title">探索桂林<br>特色的文化</h2>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="culture_card">
+              <img src="../resource/images/3yue3.jpg" class="img_animation" alt="">
+              <div class="culture_data">
+                <h3 class="margin_box-8">三月三</h3>
+                <p>
+                  壮族过三月三大多是赶歌圩，搭歌棚，举办歌会。青年男女们对歌、
+                  碰蛋、抛绣球，谈情说爱。相传为纪念壮族歌仙刘三姐而形成的节日，
+                  故又称“歌仙节”。壮族通常在三月三蒸五色糯米饭。壮族“三月三”习俗有很多，
+                  抢花炮、抛绣球、吃五色糯米饭等也是有趣的节日习俗。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="culture_card">
+              <img src="../resource/images/guiju.jpg" class="img_animation" alt="">
+              <div class="culture_data">
+                <h3 class="margin_box-8">桂剧</h3>
+                <p>
+                  桂剧是发源于桂林，流行于桂北广大城乡的地方剧种之一。
+                  是广西各族人民喜闻乐见的主要地方剧种之一。桂剧唱腔，
+                  以弹腔为主体，兼有高腔、昆腔、吹腔和杂腔小调。桂剧伴奏乐队，
+                  分文、武两场。桂剧用桂林方言演唱，声调优美，抑扬有致。表演质朴细腻，
+                  唱腔委婉动人。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="culture_card">
+              <img src="../resource/images/caidiao.jpg" class="img_animation" alt="">
+              <div class="culture_data">
+                <h3 class="margin_box-8">彩调</h3>
+                <p>
+                  彩调是广西最具特色的戏曲剧种之一，旧称调子，属明代四大声腔的东柳西梆南昆北弋之
+                  柳子腔路子，主要分布于广西桂林、柳州、河池及百色、崇左、南宁、梧州部分区域等，
+                  凡能流行西南官话的地方，均为彩调的流行区域。彩调的剧本内容多以劳动、爱情、生活、
+                  家长里短、悲欢离合等为主。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="./culture.html" class="explore_btn food_btn">
+          探索更多<i class="bi bi-arrow-down-right icon_btn"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- contact 联系我们 -->
+    <section class="contact">
+      <div class="contact-bg row">
+        <div class="contact-box col-12 col-md-6">
+          <h2 class="contact-title">
+            如果你有问题，欢迎联系我们进行反馈
+          </h2>
+
+          <div class="box-info">
+            <h3>电话联系我们</h3>
+            <span><i class="bi bi-telephone"></i> 13197722537</span>
+          </div>
+
+          <div class="box-info">
+            <h3>邮箱联系我们</h3>
+            <span><i class="bi bi-envelope"></i> 1410124534@qq.com</span>
+          </div>
+        </div>
+
+        <div class="contact-form col-12 col-md-6">
+          <!-- 邮箱 -->
+          <div class="form-box">
+            <input type="email" class="form-input" name="email" id="email" placeholder=" ">
+            <label for="email" class="form-label">邮 箱</label>
+          </div>
+
+          <!-- 主题 -->
+          <div class="form-box">
+            <input type="text" class="form-input" name="subject" id="subject" placeholder=" ">
+            <label for="subject" class="form-label">主 题</label>
+          </div>
+
+          <!-- 信息 -->
+          <div class="form-box">
+            <textarea name="message" class="form-input" id="message" placeholder=" "></textarea>
+            <label for="message" class="form-label msg-label">信 息</label>
+          </div>
+
+          <button class="explore_btn form-btn">发 送 <i class="bi bi-arrow-up-right icon_btn"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_box container">
+      <div class="footer_content">
+        <a href="#" class="footer_logo">
+          <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+        </a>
+  
+        <h3 class="footer_title">桂林山水甲天下</h3>
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-emoji-smile icon_scale"></i> 欢迎大家来桂林游玩
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">我们的地址</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XXXX大学XX校区
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XXXXXXX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XXXXXXX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">联系我们</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-envelope icon_scale"></i> XXXXXXXXXX@qq.com
+          </li>
+          <li>
+            <i class="bi bi-telephone-forward icon_scale"></i> XXXXXXXXXX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">关于网站</h3>
+  
+        <ul class="footer_data">
+          <li>2021-2022-1学期</li>
+          <li>Web前端开发技术课程设计</li>
+          <li>学号：XXX</li>
+          <li>姓名：XXX</li>
+          <li>班级：XXX</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- up Top 按钮 -->
+  <a href="#carousel" class="up_top" id="up_top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- JQuery 和 Bootstrap -->
+  <script src="../resource/lib/jquery-3.6.0.min.js"></script>
+  <script src="../resource/lib/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <!-- script -->
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* == 宽度像素小于768px == */
+@media screen and (max-width: 768px) {
+
+  /* === 巨幕 === */
+  .jumbotron-bg {
+    background-position: 20% center;
+  }
+
+  /* === content === */
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-p {
+    font-size: .75rem;
+  }
+
+  .triangle {
+    border-right: 2.5rem solid #FFF1DD;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+  }
+
+  .card-circle {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .card-icon {
+    top: 10%;
+  }
+}
+
+/* == 宽度像素大于768px == */
+@media screen and (min-width: 768px) {
+  /* == header == */
+  .nav_link {
+    color: #FFF !important;
+  }
+
+  .nav_link:hover {
+    color: green !important;
+  }
+
+  /* == content == */
+  .img_animation {
+    max-height: 178px;
+  }
+
+  .scenery-bg {
+    padding: 1rem 3rem;
+  }
+
+  .card-data {
+    min-width: 400px;
+    margin: 0 auto;
+  }
+
+  .card-icon {
+    top: 15%;
+  }
+}

@@ -1,0 +1,277 @@
+/* === 定义全局配色 === */
+:root {
+  --body-color: #FFF;
+  --dark-green: #387558;
+  --light-green: #91B2B1;
+  --light-brown: #BBA494;
+  --faint-yellow: #F9D5A8;
+  --light-yellow: #FFF1DD;
+  --light-orange: #82ccdd;
+  --gray: #f1f0f0;
+}
+
+
+/* === header 样式 === */
+.nav_logo:hover {
+  color: green;
+}
+
+.nav_link {
+  color: #bdd899;
+}
+
+.nav_link:hover {
+  color: #fa8c35;
+}
+
+/* == scroll header添加阴影 和 改变颜色 == */
+.scroll-header {
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  background-color: #bbcaa8;
+}
+/* == header logo and font 改变颜色 == */
+.scroll-white {
+  color: #FFF !important;
+}
+
+/* === jumbotron 巨幕 === */
+.jumbotron-bg {
+  background: url('../../resource/images/item2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.jumbotron-data {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transform: translateY(-4rem) rotate(-15deg);
+}
+
+.jumbotron-h1 {
+  font-size: 2rem;
+  z-index: 3;
+}
+
+.jumbotron-p {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  z-index: 3;
+}
+
+.highlight {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #bbcaa8;
+}
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* === content 主体部分 === */
+.content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* intro */
+.guilin-intro {
+  background-color: #bdd899;
+  padding: 1rem .5rem;
+  border-radius: .5rem;
+  margin: 1rem auto;
+}
+
+.intro-title {
+  font-weight: bold;
+  color: #172c66;
+}
+
+.intro-content {
+  color: #172c66;
+  text-indent: 2em;
+}
+
+/* = scenery = */
+.scenery {
+  display: flex;
+  flex-direction: column;
+}
+
+.scenery-bg {
+  padding: 1rem .5rem;
+  background: url('../../resource/images/bodybg.png');
+  background-repeat: repeat-y;
+}
+
+.scenery-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.scenery-card {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem auto;
+}
+
+.card-flex-right {
+  flex-direction: row-reverse;
+}
+
+.scenery-img {
+  z-index: 5;
+  width: 40vw;
+  max-width: 500px;
+  height: auto;
+  padding: .5rem;
+  border: 1px dotted #000;
+  background-color: #fff;
+  transform: rotate(-5deg);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.img-rotate-right {
+  transform: rotate(5deg);
+}
+
+.scenery-img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.img-bg-blue {
+  background-color: #badfe7;
+}
+
+.img-bg-pink {
+  background-color: rgb(240, 208, 240);
+}
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.card-p {
+  max-width: 160px;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #FFF;
+  z-index: 3;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  opacity: .6;
+  border-right: 5rem solid #fff1dd;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  position: absolute;
+  transform: rotate(10deg) scale(2.4);
+  z-index: 2;
+}
+
+.card-icon {
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-arrow {
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 10%;
+  left: 26%;
+}
+
+.card-arrow-left {
+  position: absolute;
+  width: 16%;
+  height: auto;
+  top: 10%;
+  right: 26%;
+}
+
+.card-circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: rgba(255, 241, 221, .5);
+  position: absolute;
+  top: 50%;
+  /* left: 10rem; */
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+/* === footer === */
+.footer {
+  background-color: #bdd899;
+}
+
+.footer_logo {
+  color: #fa8c35;
+}
+
+.footer_title {
+  color: #FFF;
+}
+
+.footer_data {
+  color: var(--gray);
+}
+
+.footer_data > li:hover {
+  color: var(--dark-green);
+}
+
+/* === Top 点击滑动到顶部 === */
+.up_top {
+  color: #FFF;
+  background-color: brown;
+}
+
+.up_top:visited {
+  color: #FFF;
+}

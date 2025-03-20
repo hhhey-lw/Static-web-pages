@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大美桂林</title>
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="../resource/lib/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <!-- scrollreveal js库 -->
+  <script src="../resource/lib/scrollreveal.min.js"></script>
+  <!-- CSS 样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/culture.css">
+  <link rel="stylesheet" href="./css/culture-phone.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- logo -->
+      <a href="#" class="nav_logo" id="nav_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </a>
+      <!-- nav list -->
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">首页</a>
+          </li>
+          <li class="nav_item">
+            <a href="./scenery.html" class="nav_link">桂林风景</a>
+          </li>
+          <li class="nav_item">
+            <a href="./food.html" class="nav_link">桂林美食</a>
+          </li>
+          <li class="nav_item">
+            <a href="./culture.html" class="nav_link">桂林文化</a>
+          </li>
+          <li class="nav_item">
+            <a href="./history.html" class="nav_link">桂林历史</a>
+          </li>
+          <li class="nav_item">
+            <a href="./login.html" target="_blank" class="nav_link">登录</a>
+          </li>
+          <li class="nav_item">
+            <img src="../resource/images/avatar.jpg" class="avatar" alt="">
+          </li>
+        </ul>
+        
+        <div class="nav_close" id="nav-close">
+          <i class="bi bi-x"></i>
+        </div>
+      </div>
+      <!-- menu btn 屏幕像素小于768时 将nav list 展开和隐藏 -->
+      <div class="nav_btn">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- jumbotron 巨幕全屏展示 -->
+  <div class="jumbotron-bg" id="jumbotron">
+    <div class="container jumbotron-data">
+      <h1 class="jumbotron-h1">体验<span class="highlight"><i class="bi bi-heart-fill"></i>桂林</span>文化</h1>
+      <h1 class="jumbotron-h1">&nbsp;&nbsp;感受桂林<span class="highlight"><i class="bi bi-emoji-laughing"></i>魅力</span></h1>
+    </div>
+    <p class="jumbotron-p">桂林艺术瑰宝！！！</p>
+  </div>
+
+  <!-- content -->
+  <main class="content container" id="content">
+    <!-- 桂林文化简介 -->
+    <section class="guilin-intro">
+      <h2 class="intro-title">桂林民风民俗</h2>
+      <p class="intro-content">
+        桂林不仅山水风光、人文景观令人神往,而且多姿多彩的民族风情也令人迷恋。壮、回、苗、瑶、侗
+        等28个少数民族占全市总人口的8.5%左右,共有少数民族70多万人。淳朴的民风、独特的地域文化,
+        诸如农耕、游牧、节庆、服饰、饮食起居、婚丧、建筑、语言文字、宗教信仰等,构成了一幅浓郁而
+        又色彩斑斓的民俗风情图画,为您的桂林之行增添情趣。
+      </p>
+    </section>
+
+    <section class="card-box">
+      <h2 class="box-title"><i class="bi bi-emoji-laughing-fill color-orange"></i>桂林语言文化</h2>
+      <!-- === 桂林话 === -->
+      <div class="card">
+        <div class="card-left margin-right-1">
+          <h3 class="card-title">桂林话</h3>
+          <p class="card-title">
+            桂林话是桂林的地方话，源于以明朝官话为代表的南方官话方言，
+            由明朝江淮移民带来，在长期的传习过程中演变成了桂林话。
+          </p>
+          <label class="card-number">01</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/guilinhua.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- === 服饰 === -->
+      <h2 class="box-title"><i class="bi bi-emoji-sunglasses-fill color-orange"></i>桂林服饰文化</h2>
+      <!-- 壮族 -->
+      <div class="card card-reverse">
+        <div class="card-left margin-left-1">
+          <h3 class="card-title">壮族服饰</h3>
+          <p class="card-title">
+            壮族妇女擅长纺织和刺绣，所织的壮布和壮锦，均以图案精美和
+            色彩艳丽著称。壮族妇
+            女的服饰端庄得体，朴素大方。她们一般的服饰是一身蓝黑，裤脚
+            稍宽，头上包着彩色印花或提花毛巾，腰间系着精致的围裙。
+          </p>
+          <label class="card-number">02</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/zhuangzu.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- 苗族 -->
+      <div class="card">
+        <div class="card-left margin-right-1">
+          <h3 class="card-title">苗族服饰</h3>
+          <p class="card-title">
+            苗族服饰从总体来看，保持着中国民间的织、绣、挑、染的传统工艺技法，
+            往往在运用一种主要的工艺手法的同时，穿插使用其他的工艺手法，或者挑
+            中带绣，或者染中带绣，或者织绣结合，从而使这些花团锦簇，流光溢彩，
+            显示出鲜明的民族艺术特色。
+          </p>
+          <label class="card-number">03</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/rongshuimiaozu.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- 瑶族 -->
+      <div class="card card-reverse">
+        <div class="card-left margin-left-1">
+          <h3 class="card-title">瑶族服饰</h3>
+          <p class="card-title">
+            瑶族支系众多，各支系服饰也不尽相同。所以，过去瑶族曾因服饰的颜色
+            裤子的式样、头饰的装扮不同而得各种族称。龙胜的瑶族由于
+            穿红色绣花衣而得“红瑶”之称，这从一个侧面反映了瑶族服饰的色彩、
+            款式之丰富。
+          </p>
+          <label class="card-number">04</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/longshengyaozu.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- 桂林戏剧文化 -->
+      <h2 class="box-title"><i class="bi bi-emoji-wink-fill color-orange"></i>桂林戏剧文化</h2>
+      <!-- 桂剧 -->
+      <div class="card">
+        <div class="card-left margin-right-1">
+          <h3 class="card-title">桂剧</h3>
+          <p class="card-title">
+            是用桂林方言演唱的剧种，做工细腻贴切、生动活泼，借助面部表情和
+            身段姿态传情，注重以细腻而富于生活气息的表演手法塑造人物
+          </p>
+          <label class="card-number">05</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/guiju.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- 彩调 -->
+      <div class="card card-reverse">
+        <div class="card-left margin-left-1">
+          <h3 class="card-title">彩调</h3>
+          <p class="card-title">
+            彩调的剧本内容多以劳动、爱情、生活、家长里短、悲欢离合等为主。
+            2006年5月20日，被列入第一批国家级非物质文化遗产名录。
+          </p>
+          <label class="card-number">06</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/caidiao.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+
+      <!-- 渔鼓 -->
+      <div class="card">
+        <div class="card-left margin-right-1">
+          <h3 class="card-title">桂林渔鼓</h3>
+          <p class="card-title">
+            桂林渔鼓俗称道情，是桂林市的汉族传统说唱艺术。桂林渔鼓叙事讲唱道情表演形式受
+            湖南渔鼓影响颇深。桂林渔鼓伴奏的主要乐器是渔鼓。
+          </p>
+          <label class="card-number">07</label>
+
+          <!-- 装饰 -->
+          <div class="cylindrical-box">
+            <div class="cylindrical"></div>
+            <div class="cylindrical cylindrical-2"></div>
+            <div class="cylindrical cylindrical-3"></div>
+          </div>
+        </div>
+        <div class="card-right">
+          <img src="../resource/images/guilinyugu.jpg" class="card-img" alt="">
+          <!-- 底部装饰 -->
+          <div class="rectangle"></div>
+          <a href="javascript:void(0)" class="more-btn">查看更多 <i class="bi bi-search icon-btn"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_box container">
+      <div class="footer_content">
+        <a href="#" class="footer_logo">
+          <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+        </a>
+  
+        <h3 class="footer_title">桂林山水甲天下</h3>
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-emoji-smile icon_scale"></i> 欢迎大家来桂林游玩
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">我们的地址</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+          <li>
+            <i class="bi bi-geo-alt icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">联系我们</h3>
+  
+        <ul class="footer_data">
+          <li>
+            <i class="bi bi-envelope icon_scale"></i> XX@qq.com
+          </li>
+          <li>
+            <i class="bi bi-telephone-forward icon_scale"></i> XX
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer_content">
+        <h3 class="footer_title">关于网站</h3>
+  
+        <ul class="footer_data">
+          <li>2021-2022-1学期</li>
+          <li>Web前端开发技术课程设计</li>
+          <li>学号：XX</li>
+          <li>姓名：XXli>
+          <li>班级：XX</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- up Top 按钮 -->
+  <a href="#jumbotron" class="up_top" id="up_top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- JQuery 和 Bootstrap -->
+  <script src="../resource/lib/jquery-3.6.0.min.js"></script>
+  <script src="../resource/lib/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <!-- script -->
+  <script src="./js/common.js"></script>
+  <script src="./js/culture.js"></script>
+</body>
+</html>

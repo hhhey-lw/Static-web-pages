@@ -1,0 +1,270 @@
+/* header */
+/* == scroll header添加阴影 和 改变颜色 == */
+.scroll-header {
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f3d2c1;
+}
+/* == header logo and font 改变颜色 == */
+.scroll-white {
+  color: #FFF !important;
+}
+
+/* === jumbotron 巨幕 === */
+.jumbotron-bg {
+  background: url('../../resource/images/guilinjjwf.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.jumbotron-data {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transform: translateY(-4rem) rotate(-15deg);
+}
+
+.jumbotron-h1 {
+  font-size: 2rem;
+  z-index: 3;
+}
+
+.jumbotron-p {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  z-index: 3;
+}
+
+.highlight {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #bbcaa8;
+}
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* === content === */
+.content {
+  margin: 1rem auto;
+}
+
+/* intro */
+.guilin-intro {
+  background-color: #f3d2c1;
+  padding: 1rem .5rem;
+  border-radius: .5rem;
+  margin: 1rem auto;
+}
+
+.intro-title {
+  font-weight: bold;
+  color: #172c66;
+}
+
+.intro-content {
+  color: #172c66;
+  text-indent: 2em;
+}
+
+/* === timeline === */
+.timeline-title {
+  font-weight: bold;
+  text-align: center;
+  color: #001858;
+  background-color: #fef6e4;
+  margin-bottom: 0;
+  padding: 1rem 0;
+}
+
+.bgc-pink {
+  background-color: #f582ae !important;
+}
+
+.bgc-green {
+  background-color: #c3f0ca !important;
+}
+
+.bgc-blue {
+  background-color: #8bd3dd !important;
+}
+
+.timeLine {
+  display: flex;
+  background-color: #fef6e4;
+}
+
+.left {
+  width: 50%;
+  border-right: .25rem solid #e45e67;
+}
+
+.right {
+  width: 50%;
+  border-left: .25rem solid #e45e67;
+}
+
+.card-left, .card-right {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.card-box {
+  width: 80%;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #f3d2c1;
+  position: relative;
+}
+
+.card-img{
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.card-img:hover {
+  transform: scale(.95) rotate(-5deg);
+}
+
+.card-box::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid #f3d2c1;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(90%);
+}
+
+.card-right .card-box::after {
+  border-left: none;
+  border-right: 15px solid #f3d2c1;
+  left: 0;
+  transform: translateY(-50%) translateX(-90%);
+}
+
+.card-box.bgc-blue::after {
+  border-left-color: #8bd3dd;
+}
+
+.card-box.bgc-green::after {
+  border-left-color: #c3f0ca;
+}
+
+.card-right .card-box.bgc-blue::after {
+  border-right-color: #8bd3dd;
+}
+
+.card-right .card-box.bgc-green::after {
+  border-right-color: #c3f0ca;
+}
+
+.card-info {
+  margin: .5rem auto;
+}
+
+.card-info > h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #001858;
+}
+
+.card-info > p {
+  font-size: .75rem;
+  color: #172c66;
+}
+
+.timeline-circle {
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #FFF;
+  background-color: rgb(245,130,174);
+  box-shadow: 4px 4px 20px wheat;
+  border-radius: 50%;
+  line-height: 3.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(50% + .25rem));
+  right: 0;
+  transition: .3s;
+  z-index: 6;
+}
+
+.timeline-circle:hover {
+  background-color: skyblue;
+  color: rgb(228,94,103);
+}
+
+.card-right .timeline-circle {
+  right: unset;
+  left: 0;
+  transform: translateY(-50%) translateX(calc(-50% - .25rem));
+}
+
+.timeline-circle > p {
+  font-weight: bold;
+  font-size: 8px;
+  text-align: center;
+  margin: 0;
+}
+
+/* === footer === */
+.footer {
+  background-color: #f3d2c1;
+}
+
+.footer_logo {
+  color: #fa8c35;
+}
+
+.footer_title {
+  color: #FFF;
+}
+
+.footer_data {
+  color: var(--gray);
+}
+
+.footer_data > li:hover {
+  color: var(--dark-green);
+}
+
+/* === Top 点击滑动到顶部 === */
+.up_top {
+  color: #FFF;
+  background-color: brown;
+}
+
+.up_top:visited {
+  color: #FFF;
+}

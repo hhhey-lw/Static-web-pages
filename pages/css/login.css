@@ -1,0 +1,169 @@
+@import url("../../resource/lib/icons-1.7.2/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 整个浏览器 视图宽度高度 view height/width */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  font-family: 'YouYuan', 'Microsoft YaHei';
+
+  --dark-green: #387558;
+}
+
+/* form居中 */
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;  /* flex布局 */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-green);
+}
+
+.login_form {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #FFF;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: .5rem .5rem .5rem rgba(255, 255, 255, .1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  row-gap: 1rem;
+}
+
+.login_logo {
+  cursor: pointer;
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.login_logo:hover {
+  transform: skew(-20deg, 0deg);
+}
+
+.login_box {
+  position: relative;
+  height: 3.25rem; /* 3个字体高度 root em*/
+  width: 12rem;
+  margin: 1rem 0;
+}
+
+.login_input {
+  font-size: 1rem;
+  width: 100%;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  padding: .5rem .25rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #CCC;
+  outline: none; /* input focus 没有焦点边框 */
+}
+
+.login_label {
+  font-size: 1rem;
+  position: absolute;
+  top: 1.75rem;
+  left: .25rem;
+  width: 3rem;
+  color: #AAA;
+  transition: .3s;
+  z-index: 5;
+}
+
+/* input 获得focus label 往上移 */
+.login_input:focus + .login_label {
+  top: 0;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+/* + 后续兄弟元素选择符 */
+/* :placeholder-shown => input placeholder 有内容时会被选中 */
+/* input 取反(有placeholder内容) => 没有placeholder内容 输入框输入文本 placeholder内容被隐藏 */
+.login_input:not(:placeholder-shown) + .login_label {
+  top: 0;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+.login_btn {
+  width: 6rem;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  background-color: var(--dark-green);
+  color: #FFF;
+  border: none;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.login_btn:hover {
+  font-weight: bold;
+  background-color: #fa8c35;
+  color: #FFF;
+}
+
+.sun, .moon {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  transition: .5s;
+}
+
+.sun {
+  color: #fa8c35;
+  top: 0rem;
+  left: 1rem;
+}
+
+.moon {
+  color: #FFE869;
+  top: 0rem;
+  right: 1rem;
+}
+
+.sun::after, .moon::after {
+  content: '';
+  position: absolute;
+  top: .75rem;
+  left: 1.75rem;
+  width: 2.5rem;
+  height: 1px;
+  background-color: #666;
+}
+
+.login_btn:hover + .sun {
+  top: 3rem;
+  opacity: 1;
+}
+
+.login_logo:hover + .moon {
+  top: 3rem;
+  opacity: 1;
+}
+
+.toRegister {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+  color: #AAA;
+  text-decoration: none;
+}

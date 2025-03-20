@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+  <!-- register -->
+  <div class="register">
+    <form class="register_form">
+      <div class="register_logo">
+        <i class="bi bi-cloud-haze2 nav_logo-icon"></i> 桂林山水
+      </div>
+
+      <!-- moon font icon 当logo：hover时将其放下来 -->
+      <div class="moon">
+        <i class="bi bi-moon-stars-fill"></i>
+      </div>
+
+      <!-- username -->
+      <div class="register_box">
+        <input type="text" class="register_input" name="username" id="username" placeholder=" " maxlength="16">
+        <label for="username" class="register_label" id="usernameLabel">账 号</label>
+      </div>
+
+      <!-- password -->
+      <div class="register_box">
+        <input type="password" class="register_input" name="password" id="password" placeholder=" " maxlength="16">
+        <label for="password" class="register_label" id="passwordLabel">密 码</label>
+      </div>
+
+      <!-- checkPassword -->
+      <div class="register_box">
+        <input type="password" class="register_input" name="checkPassword" id="checkPassword" placeholder=" " maxlength="16">
+        <label for="checkPassword" class="register_label" id="checkPasswordLabel">重 复 密 码</label>
+      </div>
+
+      <!-- phone -->
+      <div class="register_box">
+        <input type="text" class="register_input" name="phone" id="phone" placeholder=" " maxlength="16">
+        <label for="phone" class="register_label" id="phoneLabel">电 话</label>
+      </div>
+
+      <!-- email -->
+      <div class="register_box">
+        <input type="email" class="register_input" name="email" id="email" placeholder=" ">
+        <label for="email" class="register_label" id="emailLabel">邮 箱</label>
+      </div>
+
+      <button type="button" class="register_btn" id="registerBtn">注 册</button>
+
+      <!-- sun font icon -->
+      <div class="sun">
+        <i class="bi bi-brightness-high-fill"></i>
+      </div>
+    </form>
+  </div>
+
+  <!-- JQuery -->
+  <script src="../resource/lib/jquery-3.6.0.min.js"></script>
+  <!-- JS -->
+  <script src="./js/register.js"></script>
+</body>
+</html>
